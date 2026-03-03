@@ -11524,7 +11524,6 @@ p.lead {
   }
 }
 
-
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -11584,4 +11583,15 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+.stagger-item {
+  opacity: 0;
+  transform: translateY(50px) scale(0.97);
+}
+
+.stagger-item.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
