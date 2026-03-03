@@ -5831,6 +5831,11 @@ fieldset:disabled .btn {
   .modal-fullscreen-md-down .modal-body {
     overflow-y: auto;
   }
+
+  .btn-download-cv {
+    padding: 12px;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 991.98px) {
   .modal-fullscreen-lg-down {
