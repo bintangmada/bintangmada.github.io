@@ -56,10 +56,11 @@ const Navbar = ({ data, lang, setLang }) => {
                         <div className="flex items-center gap-3">
                             <button
                                 onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
-                                className="px-2.5 py-1 text-xs font-bold rounded-md bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                                className="flex items-center p-0.5 rounded-md bg-gray-200 dark:bg-gray-800 text-xs font-bold transition-colors"
                                 aria-label="Toggle Language"
                             >
-                                {lang === 'id' ? 'ID' : 'EN'}
+                                <span className={`px-2 py-1 rounded-sm transition-all ${lang === 'id' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'}`}>ID</span>
+                                <span className={`px-2 py-1 rounded-sm transition-all ${lang === 'en' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'}`}>EN</span>
                             </button>
 
                             <button
@@ -79,9 +80,11 @@ const Navbar = ({ data, lang, setLang }) => {
                     <div className="md:hidden flex items-center gap-2">
                         <button
                             onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
-                            className="px-2 py-1 text-xs font-bold rounded-md bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-blue-600"
+                            className="flex items-center p-0.5 rounded-md bg-gray-200 dark:bg-gray-800 text-xs font-bold transition-colors"
+                            aria-label="Toggle Language"
                         >
-                            {lang === 'id' ? 'ID' : 'EN'}
+                            <span className={`px-2 py-1 rounded-sm transition-all ${lang === 'id' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400'}`}>ID</span>
+                            <span className={`px-2 py-1 rounded-sm transition-all ${lang === 'en' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400'}`}>EN</span>
                         </button>
                         <button
                             onClick={() => setIsDark(!isDark)}

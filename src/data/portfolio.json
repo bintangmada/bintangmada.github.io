@@ -3,13 +3,13 @@
         "personal": {
             "name": "Bintang Mada",
             "shortName": "Bintang",
-            "role": "Web Developer",
+            "role": "Java Developer",
             "greeting": "Selamat Datang di Portofolio Saya",
             "shortDescription": "Saya seorang Web Developer yang antusias dalam menciptakan antarmuka digital yang indah, responsif, dan mudah digunakan.",
-            "email": "halo@bintangsuharsono.com",
+            "email": "bintang.mada@gmail.com",
             "location": "Jakarta, Indonesia",
-            "github": "#",
-            "linkedin": "#",
+            "github": "https://github.com/bintangmada",
+            "linkedin": "https://www.linkedin.com/in/bintang-mada/",
             "image": "/images/profile/profile.jpg"
         },
         "navLinks": [
@@ -40,23 +40,30 @@
         ],
         "about": {
             "paragraphs": [
-                "Halo! Sebagai seorang Web Developer, saya memiliki passion besar dalam membangun website yang tidak hanya berfungsi dengan baik secara teknis, tetapi juga memberikan pengalaman pengguna yang luar biasa. Saya senang mempelajari teknologi baru dan menerapkannya untuk memecahkan masalah kompleks melalui kode.",
-                "Saya selalu tertantang untuk mengubah ide-ide kreatif menjadi produk digital yang interaktif. Fokus saya adalah menulis kode yang bersih (clean code) dan memastikan website dapat diakses dengan baik di berbagai perangkat."
+                "Saya seorang Java Developer dengan pengalaman langsung dalam mengembangkan dan memelihara aplikasi enterprise, terutama menggunakan Java Spring Boot.",
+                "Terampil dalam pengembangan backend dan fullstack, manajemen database, serta sistem manajemen vendor. Memiliki kemampuan yang terbukti dalam memberikan hasil kerja baik dalam tim maupun secara mandiri."
             ],
             "skills": [
-                "Spring Boot",
                 "Java",
                 "SQL",
                 "JavaScript",
-                "React.js",
-                "Tailwind CSS",
-                "HTML5",
-                "CSS3",
-                "Node.js",
-                "Git",
+                "Spring Boot",
+                "Bootstrap",
+                "MySQL",
+                "Oracle",
+                "Redis",
+                "IntelliJ IDEA",
+                "SQL Developer",
+                "GitLab",
+                "GitHub",
+                "Postman",
+                "VS Code",
                 "Figma",
-                "Responsive Design",
-                "UI/UX"
+                "Trello",
+                "Windows 11",
+                "MacOS",
+                "FileZilla",
+                "MS Office"
             ],
             "focusAreas": [
                 {
@@ -73,71 +80,140 @@
         },
         "educations": [
             {
-                "degree": "Sarjana Teknik Informatika",
-                "institution": "Universitas Contoh Mada",
-                "year": "2019 - 2023",
-                "description": "Fokus pada Rekayasa Perangkat Lunak dan Pengembangan Web. Lulus dengan predikat Cum Laude (IPK 3.85)."
+                "degree": "Sarjana Teknik Informatika / Ilmu Komputer",
+                "institution": "Universitas Brawijaya",
+                "year": "",
+                "description": "Fokus: Jaringan Komputer, Keamanan Jaringan, dan Sistem Terdistribusi (IPK: 3.31)"
             },
             {
-                "degree": "Jurusan IPA",
-                "institution": "SMA Negeri 1 Contoh",
-                "year": "2016 - 2019",
-                "description": "Aktif dalam klub komputer dan olimpiade sains tingkat provinsi."
+                "degree": "Java Coding Camp",
+                "institution": "PT Mitra Integrasi Informatika",
+                "year": "2022-2023",
+                "description": "Pelatihan dan Sertifikasi."
+            },
+            {
+                "degree": "Fullstack Web Designer",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Pelatihan dan Sertifikasi."
+            },
+            {
+                "degree": "Progressive Web Apps",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Pelatihan dan Sertifikasi."
             }
         ],
         "experiences": [
             {
-                "role": "Frontend Developer",
-                "company": "Tech Solutions Indonesia",
-                "duration": "Jan 2024 - Sekarang",
-                "description": "Mengembangkan aplikasi web responsif menggunakan React.js dan Tailwind CSS. Berkolaborasi dengan tim UI/UX untuk meningkatkan performa web hingga mendapat skor Lighthouse 90+.",
+                "role": "Developer",
+                "company": "Bank Negara Indonesia (Persero)",
+                "duration": "Mar 2023 - Sekarang",
+                "description": "Mengembangkan dan memelihara aplikasi manajemen vendor (internal & eksternal). Menangani registrasi vendor, kontrak, dan pelacakan personel alih daya (outsource). Membuat fitur pelaporan dan dasbor pemantauan.",
                 "tags": [
-                    "React.js",
-                    "Tailwind CSS",
-                    "Redux"
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
                 ]
             },
             {
-                "role": "Web Developer Intern",
-                "company": "Digital Kreatif Nusantara",
-                "duration": "Jun 2023 - Des 2023",
-                "description": "Membantu dalam pembuatan company profile interaktif untuk berbagai klien. Mempelajari dan menerapkan arsitektur komponen yang bersih dan optimasi SEO dasar.",
+                "role": "Application Developer Jr.",
+                "company": "PT Mitra Integrasi Informatika",
+                "duration": "Nov 2022 - Sekarang",
+                "description": "Membangun sistem backend dengan Java Spring Boot. Membuat proyek fullstack menggunakan Java, Thymeleaf, HTML, CSS, dan JS.",
                 "tags": [
-                    "JavaScript",
-                    "HTML5",
-                    "CSS3"
+                    "Java",
+                    "Spring Boot",
+                    "Thymeleaf",
+                    "HTML/CSS/JS"
+                ]
+            },
+            {
+                "role": "IT Developer",
+                "company": "Aan Safaat Permadi & Partners",
+                "duration": "Jan 2019 - Apr 2019",
+                "description": "Merancang dan mengembangkan sistem captive portal menggunakan Raspberry Pi. Mengintegrasikan FreeRadius, DaloRadius, dan CoovaChilli.",
+                "tags": [
+                    "Raspberry Pi",
+                    "FreeRadius",
+                    "DaloRadius",
+                    "CoovaChilli"
+                ]
+            },
+            {
+                "role": "IT Infrastructure Staff",
+                "company": "Universitas Brawijaya",
+                "duration": "Jun 2018 - Agt 2018",
+                "description": "Melakukan refaktor website fakultas dan memelihara fasilitas jaringan.",
+                "tags": [
+                    "Infrastructure",
+                    "Network"
                 ]
             }
         ],
         "projects": [
             {
-                "title": "E-Commerce Dashboard",
-                "description": "Panel admin modern untuk mengelola metrik toko, produk, dan pesanan pelanggan dengan grafik data waktu nyata yang interaktif.",
+                "title": "Vendor Management Enhancement",
+                "description": "Sistem peningkatan manajemen vendor untuk kebutuhan enterprise. (Tahun: 2025)",
                 "tags": [
-                    "React",
-                    "Tailwind CSS",
-                    "Chart.js"
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
                 ],
                 "link": "#",
                 "image": "/images/projects/ecommerce.jpg"
             },
             {
-                "title": "Aplikasi Landing Page",
-                "description": "Landing page konversi tinggi untuk startup finansial. Dilengkapi dengan animasi scroll halus dan desain yang sepenuhnya responsif.",
+                "title": "Session Management System with Redis",
+                "description": "Sistem manajemen sesi pengguna menggunakan Redis untuk aplikasi berskala besar. (Tahun: 2023)",
                 "tags": [
-                    "React",
-                    "Framer Motion"
+                    "Redis",
+                    "Java",
+                    "Backend"
                 ],
                 "link": "#",
                 "image": "/images/projects/landing-page.jpg"
             },
             {
-                "title": "Task Management App",
-                "description": "Aplikasi kanban board sederhana untuk produktivitas tim, dilengkapi fitur drag-and-drop antar kolom status tugas.",
+                "title": "Asset Management System with Spring Boot",
+                "description": "Aplikasi manajemen aset berbasis Spring Boot. (Tahun: 2022)",
                 "tags": [
-                    "JavaScript",
-                    "CSS3",
-                    "HTML5"
+                    "Spring Boot",
+                    "Java",
+                    "Asset Management"
+                ],
+                "link": "#",
+                "image": "/images/projects/kanban.jpg"
+            },
+            {
+                "title": "HR Schema CRUD",
+                "description": "Operasi CRUD sederhana untuk skema HR. (Tahun: 2022)",
+                "tags": [
+                    "CRUD",
+                    "Database",
+                    "SQL"
+                ],
+                "link": "#",
+                "image": "/images/projects/ecommerce.jpg"
+            },
+            {
+                "title": "IoT Fog Computing System for Mushrooms Cultivation",
+                "description": "Sistem komputasi fog berbasis IoT untuk budidaya jamur. (Tahun: 2021)",
+                "tags": [
+                    "IoT",
+                    "Fog Computing",
+                    "Hardware"
+                ],
+                "link": "#",
+                "image": "/images/projects/landing-page.jpg"
+            },
+            {
+                "title": "Clothing Store Landing Page & PWA",
+                "description": "Halaman landing untuk toko pakaian dengan fitur Progressive Web App (PWA). (Tahun: 2020)",
+                "tags": [
+                    "PWA",
+                    "Landing Page",
+                    "Frontend"
                 ],
                 "link": "#",
                 "image": "/images/projects/kanban.jpg"
@@ -177,7 +253,7 @@
             "role": "Web Developer",
             "greeting": "Welcome to My Portfolio",
             "shortDescription": "I am an enthusiastic Web Developer dedicated to creating beautiful, responsive, and user-friendly digital interfaces.",
-            "email": "halo@bintangsuharsono.com",
+            "email": "bintang.mada@gmail.com",
             "location": "Jakarta, Indonesia",
             "github": "#",
             "linkedin": "#",
@@ -211,23 +287,30 @@
         ],
         "about": {
             "paragraphs": [
-                "Hello! As a Web Developer, I have a deep passion for building websites that not only function flawlessly technically, but also provide an exceptional user experience. I love learning new technologies and applying them to solve complex problems through code.",
-                "I am constantly challenged to turn creative ideas into interactive digital products. My focus is on writing clean code and ensuring the website is fully accessible across all devices."
+                "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
+                "Skilled in backend and fullstack development, database management, and vendor management systems. Proven ability to deliver results in team-based and independent environments."
             ],
             "skills": [
-                "Spring Boot",
                 "Java",
                 "SQL",
                 "JavaScript",
-                "React.js",
-                "Tailwind CSS",
-                "HTML5",
-                "CSS3",
-                "Node.js",
-                "Git",
+                "Spring Boot",
+                "Bootstrap",
+                "MySQL",
+                "Oracle",
+                "Redis",
+                "IntelliJ IDEA",
+                "SQL Developer",
+                "GitLab",
+                "GitHub",
+                "Postman",
+                "VS Code",
                 "Figma",
-                "Responsive Design",
-                "UI/UX"
+                "Trello",
+                "Windows 11",
+                "MacOS",
+                "FileZilla",
+                "MS Office"
             ],
             "focusAreas": [
                 {
@@ -244,71 +327,140 @@
         },
         "educations": [
             {
-                "degree": "Bachelor of Informatics Engineering",
-                "institution": "Universitas Contoh Mada",
-                "year": "2019 - 2023",
-                "description": "Focused on Software Engineering and Web Development. Graduated Cum Laude (GPA 3.85)."
+                "degree": "Bachelor Degree in Informatics / Computer Science",
+                "institution": "Brawijaya University",
+                "year": "",
+                "description": "Focus: Computer Networking, Network Security, and Distributed Systems. GPA : 3.31"
             },
             {
-                "degree": "Science Major",
-                "institution": "SMA Negeri 1 Contoh",
-                "year": "2016 - 2019",
-                "description": "Active in the computer club and provincial level science olympiads."
+                "degree": "Java Coding Camp",
+                "institution": "PT Mitra Integrasi Informatika",
+                "year": "2022-2023",
+                "description": "Training and Certification."
+            },
+            {
+                "degree": "Fullstack Web Designer",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Training and Certification."
+            },
+            {
+                "degree": "Progressive Web Apps",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Training and Certification."
             }
         ],
         "experiences": [
             {
-                "role": "Frontend Developer",
-                "company": "Tech Solutions Indonesia",
-                "duration": "Jan 2024 - Present",
-                "description": "Developed responsive web applications using React.js and Tailwind CSS. Collaborated with the UI/UX team to improve web performance, achieving a Lighthouse score of 90+.",
+                "role": "Developer",
+                "company": "Bank Negara Indonesia (Persero)",
+                "duration": "Mar 2023 - Present",
+                "description": "Developed and maintained vendor management applications (internal & external). Handled vendor registration, contracts, and outsourced personnel tracking. Created reporting features and monitoring dashboards.",
                 "tags": [
-                    "React.js",
-                    "Tailwind CSS",
-                    "Redux"
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
                 ]
             },
             {
-                "role": "Web Developer Intern",
-                "company": "Digital Kreatif Nusantara",
-                "duration": "Jun 2023 - Dec 2023",
-                "description": "Assisted in building interactive company profiles for various clients. Learned and applied clean component architectures and basic SEO optimization.",
+                "role": "Application Developer Jr.",
+                "company": "PT Mitra Integrasi Informatika",
+                "duration": "Nov 2022 - Present",
+                "description": "Built backend systems with Java Spring Boot. Created fullstack projects using Java, Thymeleaf, HTML, CSS, and JS.",
                 "tags": [
-                    "JavaScript",
-                    "HTML5",
-                    "CSS3"
+                    "Java",
+                    "Spring Boot",
+                    "Thymeleaf",
+                    "HTML/CSS/JS"
+                ]
+            },
+            {
+                "role": "IT Developer",
+                "company": "Aan Safaat Permadi & Partners",
+                "duration": "Jan 2019 - Apr 2019",
+                "description": "Designed and developed captive portal system using Raspberry Pi. Integrated FreeRadius, DaloRadius, and CoovaChilli.",
+                "tags": [
+                    "Raspberry Pi",
+                    "FreeRadius",
+                    "DaloRadius",
+                    "CoovaChilli"
+                ]
+            },
+            {
+                "role": "IT Infrastructure Staff",
+                "company": "Brawijaya University",
+                "duration": "Jun 2018 - Aug 2018",
+                "description": "Refactored faculty website and maintained network facilities.",
+                "tags": [
+                    "Infrastructure",
+                    "Network"
                 ]
             }
         ],
         "projects": [
             {
-                "title": "E-Commerce Dashboard",
-                "description": "Modern admin panel to manage store metrics, products, and customer orders with interactive real-time data charts.",
+                "title": "Vendor Management Enhancement",
+                "description": "An enhanced vendor management system for enterprise needs. (Year: 2025)",
                 "tags": [
-                    "React",
-                    "Tailwind CSS",
-                    "Chart.js"
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
                 ],
                 "link": "#",
                 "image": "/images/projects/ecommerce.jpg"
             },
             {
-                "title": "Landing Page Application",
-                "description": "High-conversion landing page for a financial startup. Features smooth scroll animations and a fully responsive design.",
+                "title": "Session Management System with Redis",
+                "description": "User session management system using Redis for scalable applications. (Year: 2023)",
                 "tags": [
-                    "React",
-                    "Framer Motion"
+                    "Redis",
+                    "Java",
+                    "Backend"
                 ],
                 "link": "#",
                 "image": "/images/projects/landing-page.jpg"
             },
             {
-                "title": "Task Management App",
-                "description": "Simple kanban board application for team productivity, featuring drag-and-drop functionality between task status columns.",
+                "title": "Asset Management System with Spring Boot",
+                "description": "Asset management application built with Spring Boot. (Year: 2022)",
                 "tags": [
-                    "JavaScript",
-                    "CSS3",
-                    "HTML5"
+                    "Spring Boot",
+                    "Java",
+                    "Asset Management"
+                ],
+                "link": "#",
+                "image": "/images/projects/kanban.jpg"
+            },
+            {
+                "title": "HR Schema CRUD",
+                "description": "Simple CRUD operations for HR schemas. (Year: 2022)",
+                "tags": [
+                    "CRUD",
+                    "Database",
+                    "SQL"
+                ],
+                "link": "#",
+                "image": "/images/projects/ecommerce.jpg"
+            },
+            {
+                "title": "IoT Fog Computing System for Mushrooms Cultivation",
+                "description": "IoT-based fog computing system for mushroom cultivation. (Year: 2021)",
+                "tags": [
+                    "IoT",
+                    "Fog Computing",
+                    "Hardware"
+                ],
+                "link": "#",
+                "image": "/images/projects/landing-page.jpg"
+            },
+            {
+                "title": "Clothing Store Landing Page & PWA",
+                "description": "Landing page and Progressive Web App (PWA) for a clothing store. (Year: 2020)",
+                "tags": [
+                    "PWA",
+                    "Landing Page",
+                    "Frontend"
                 ],
                 "link": "#",
                 "image": "/images/projects/kanban.jpg"

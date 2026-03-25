@@ -3,6 +3,19 @@ import { motion } from 'framer-motion';
 const Contact = ({ data }) => {
   const { personal, ui } = data;
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    const mailtoLink = `mailto:${personal.email}?subject=${encodeURIComponent(subject || `Pesan dari Website Portofolio - ${name}`)}&body=${encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`)}`;
+    
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-900/50 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,26 +73,26 @@ const Contact = ({ data }) => {
           </div>
 
           <div className="md:w-3/5 p-10">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{ui.fullName}</label>
-                  <input type="text" id="name" className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white" placeholder={ui.namePlaceholder} />
+                  <input type="text" id="name" name="name" required className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white" placeholder={ui.namePlaceholder} />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{ui.email}</label>
-                  <input type="email" id="email" className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white" placeholder="john@example.com" />
+                  <input type="email" id="email" name="email" required className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white" placeholder="john@example.com" />
                 </div>
               </div>
               
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{ui.subject}</label>
-                <input type="text" id="subject" className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white" placeholder={ui.subjectPlaceholder} />
+                <input type="text" id="subject" name="subject" required className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white" placeholder={ui.subjectPlaceholder} />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{ui.message}</label>
-                <textarea id="message" rows="5" className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white resize-none" placeholder={ui.messagePlaceholder}></textarea>
+                <textarea id="message" name="message" required rows="5" className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition text-gray-900 dark:text-white resize-none" placeholder={ui.messagePlaceholder}></textarea>
               </div>
 
               <motion.button 

@@ -43,7 +43,7 @@ const About = ({ data }) => {
                         ))}
 
                         <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                            <a href="/assets/files/CV_Bintang_Mada_Suharsono.pdf" download="CV_Bintang_Mada.pdf" className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path></svg>
                                 {ui.downloadCv}
                             </a>
