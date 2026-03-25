@@ -1,0 +1,344 @@
+{
+    "id": {
+        "personal": {
+            "name": "Bintang Suharsono",
+            "shortName": "Bintang",
+            "role": "Web Developer",
+            "greeting": "Selamat Datang di Portofolio Saya",
+            "shortDescription": "Saya seorang Web Developer yang antusias dalam menciptakan antarmuka digital yang indah, responsif, dan mudah digunakan.",
+            "email": "halo@bintangsuharsono.com",
+            "location": "Jakarta, Indonesia",
+            "github": "#",
+            "linkedin": "#",
+            "image": "/images/profile/profile.jpg"
+        },
+        "navLinks": [
+            {
+                "name": "Beranda",
+                "href": "#home"
+            },
+            {
+                "name": "Tentang",
+                "href": "#about"
+            },
+            {
+                "name": "Pendidikan",
+                "href": "#education"
+            },
+            {
+                "name": "Pengalaman",
+                "href": "#experience"
+            },
+            {
+                "name": "Proyek",
+                "href": "#projects"
+            },
+            {
+                "name": "Kontak",
+                "href": "#contact"
+            }
+        ],
+        "about": {
+            "paragraphs": [
+                "Halo! Sebagai seorang Web Developer, saya memiliki passion besar dalam membangun website yang tidak hanya berfungsi dengan baik secara teknis, tetapi juga memberikan pengalaman pengguna yang luar biasa. Saya senang mempelajari teknologi baru dan menerapkannya untuk memecahkan masalah kompleks melalui kode.",
+                "Saya selalu tertantang untuk mengubah ide-ide kreatif menjadi produk digital yang interaktif. Fokus saya adalah menulis kode yang bersih (clean code) dan memastikan website dapat diakses dengan baik di berbagai perangkat."
+            ],
+            "skills": [
+                "Spring Boot",
+                "Java",
+                "SQL",
+                "JavaScript",
+                "React.js",
+                "Tailwind CSS",
+                "HTML5",
+                "CSS3",
+                "Node.js",
+                "Git",
+                "Figma",
+                "Responsive Design",
+                "UI/UX"
+            ],
+            "focusAreas": [
+                {
+                    "title": "Frontend Development",
+                    "description": "Membangun antarmuka interaktif menggunakan React dan ekosistem moderen.",
+                    "icon": "code"
+                },
+                {
+                    "title": "Responsive Design",
+                    "description": "Desain adaptif yang bekerja sempurna di Mobile, Tablet, maupun Desktop.",
+                    "icon": "device"
+                }
+            ]
+        },
+        "educations": [
+            {
+                "degree": "Sarjana Teknik Informatika",
+                "institution": "Universitas Contoh Mada",
+                "year": "2019 - 2023",
+                "description": "Fokus pada Rekayasa Perangkat Lunak dan Pengembangan Web. Lulus dengan predikat Cum Laude (IPK 3.85)."
+            },
+            {
+                "degree": "Jurusan IPA",
+                "institution": "SMA Negeri 1 Contoh",
+                "year": "2016 - 2019",
+                "description": "Aktif dalam klub komputer dan olimpiade sains tingkat provinsi."
+            }
+        ],
+        "experiences": [
+            {
+                "role": "Frontend Developer",
+                "company": "Tech Solutions Indonesia",
+                "duration": "Jan 2024 - Sekarang",
+                "description": "Mengembangkan aplikasi web responsif menggunakan React.js dan Tailwind CSS. Berkolaborasi dengan tim UI/UX untuk meningkatkan performa web hingga mendapat skor Lighthouse 90+.",
+                "tags": [
+                    "React.js",
+                    "Tailwind CSS",
+                    "Redux"
+                ]
+            },
+            {
+                "role": "Web Developer Intern",
+                "company": "Digital Kreatif Nusantara",
+                "duration": "Jun 2023 - Des 2023",
+                "description": "Membantu dalam pembuatan company profile interaktif untuk berbagai klien. Mempelajari dan menerapkan arsitektur komponen yang bersih dan optimasi SEO dasar.",
+                "tags": [
+                    "JavaScript",
+                    "HTML5",
+                    "CSS3"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "E-Commerce Dashboard",
+                "description": "Panel admin modern untuk mengelola metrik toko, produk, dan pesanan pelanggan dengan grafik data waktu nyata yang interaktif.",
+                "tags": [
+                    "React",
+                    "Tailwind CSS",
+                    "Chart.js"
+                ],
+                "link": "#",
+                "image": "/images/projects/ecommerce.jpg"
+            },
+            {
+                "title": "Aplikasi Landing Page",
+                "description": "Landing page konversi tinggi untuk startup finansial. Dilengkapi dengan animasi scroll halus dan desain yang sepenuhnya responsif.",
+                "tags": [
+                    "React",
+                    "Framer Motion"
+                ],
+                "link": "#",
+                "image": "/images/projects/landing-page.jpg"
+            },
+            {
+                "title": "Task Management App",
+                "description": "Aplikasi kanban board sederhana untuk produktivitas tim, dilengkapi fitur drag-and-drop antar kolom status tugas.",
+                "tags": [
+                    "JavaScript",
+                    "CSS3",
+                    "HTML5"
+                ],
+                "link": "#",
+                "image": "/images/projects/kanban.jpg"
+            }
+        ],
+        "ui": {
+            "halo": "Halo, Saya",
+            "viewProjects": "Lihat Proyek",
+            "contactMe": "Hubungi Saya",
+            "aboutMe": "Tentang Saya",
+            "descTitle": "Deskripsi Diri",
+            "downloadCv": "Unduh CV Saya",
+            "skillsTitle": "Keahlian & Tools",
+            "focusTitle": "Area Fokus",
+            "education": "Pendidikan",
+            "experience": "Pengalaman Kerja",
+            "projects": "Karya Pilihan",
+            "viewGithub": "Lihat GitHub Saya",
+            "contactTitle": "Mari Terhubung",
+            "contactDesc": "Tertarik untuk bekerja sama atau sekadar menyapa? Jangan ragu untuk mengirimkan pesan melalui form di bawah ini.",
+            "contactInfo": "Informasi Kontak",
+            "email": "Email",
+            "location": "Lokasi",
+            "fullName": "Nama Lengkap",
+            "subject": "Subjek",
+            "message": "Pesan",
+            "sendMessage": "Kirim Pesan",
+            "namePlaceholder": "John Doe",
+            "subjectPlaceholder": "Tawaran Proyek",
+            "messagePlaceholder": "Ceritakan bagaimana saya bisa membantu Anda..."
+        }
+    },
+    "en": {
+        "personal": {
+            "name": "Bintang Suharsono",
+            "shortName": "Bintang",
+            "role": "Web Developer",
+            "greeting": "Welcome to My Portfolio",
+            "shortDescription": "I am an enthusiastic Web Developer dedicated to creating beautiful, responsive, and user-friendly digital interfaces.",
+            "email": "halo@bintangsuharsono.com",
+            "location": "Jakarta, Indonesia",
+            "github": "#",
+            "linkedin": "#",
+            "image": "/images/profile/profile.jpg"
+        },
+        "navLinks": [
+            {
+                "name": "Home",
+                "href": "#home"
+            },
+            {
+                "name": "About",
+                "href": "#about"
+            },
+            {
+                "name": "Education",
+                "href": "#education"
+            },
+            {
+                "name": "Experience",
+                "href": "#experience"
+            },
+            {
+                "name": "Projects",
+                "href": "#projects"
+            },
+            {
+                "name": "Contact",
+                "href": "#contact"
+            }
+        ],
+        "about": {
+            "paragraphs": [
+                "Hello! As a Web Developer, I have a deep passion for building websites that not only function flawlessly technically, but also provide an exceptional user experience. I love learning new technologies and applying them to solve complex problems through code.",
+                "I am constantly challenged to turn creative ideas into interactive digital products. My focus is on writing clean code and ensuring the website is fully accessible across all devices."
+            ],
+            "skills": [
+                "Spring Boot",
+                "Java",
+                "SQL",
+                "JavaScript",
+                "React.js",
+                "Tailwind CSS",
+                "HTML5",
+                "CSS3",
+                "Node.js",
+                "Git",
+                "Figma",
+                "Responsive Design",
+                "UI/UX"
+            ],
+            "focusAreas": [
+                {
+                    "title": "Frontend Development",
+                    "description": "Building interactive interfaces using React and the modern ecosystem.",
+                    "icon": "code"
+                },
+                {
+                    "title": "Responsive Design",
+                    "description": "Adaptive design that works perfectly on Mobile, Tablet, and Desktop.",
+                    "icon": "device"
+                }
+            ]
+        },
+        "educations": [
+            {
+                "degree": "Bachelor of Informatics Engineering",
+                "institution": "Universitas Contoh Mada",
+                "year": "2019 - 2023",
+                "description": "Focused on Software Engineering and Web Development. Graduated Cum Laude (GPA 3.85)."
+            },
+            {
+                "degree": "Science Major",
+                "institution": "SMA Negeri 1 Contoh",
+                "year": "2016 - 2019",
+                "description": "Active in the computer club and provincial level science olympiads."
+            }
+        ],
+        "experiences": [
+            {
+                "role": "Frontend Developer",
+                "company": "Tech Solutions Indonesia",
+                "duration": "Jan 2024 - Present",
+                "description": "Developed responsive web applications using React.js and Tailwind CSS. Collaborated with the UI/UX team to improve web performance, achieving a Lighthouse score of 90+.",
+                "tags": [
+                    "React.js",
+                    "Tailwind CSS",
+                    "Redux"
+                ]
+            },
+            {
+                "role": "Web Developer Intern",
+                "company": "Digital Kreatif Nusantara",
+                "duration": "Jun 2023 - Dec 2023",
+                "description": "Assisted in building interactive company profiles for various clients. Learned and applied clean component architectures and basic SEO optimization.",
+                "tags": [
+                    "JavaScript",
+                    "HTML5",
+                    "CSS3"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "E-Commerce Dashboard",
+                "description": "Modern admin panel to manage store metrics, products, and customer orders with interactive real-time data charts.",
+                "tags": [
+                    "React",
+                    "Tailwind CSS",
+                    "Chart.js"
+                ],
+                "link": "#",
+                "image": "/images/projects/ecommerce.jpg"
+            },
+            {
+                "title": "Landing Page Application",
+                "description": "High-conversion landing page for a financial startup. Features smooth scroll animations and a fully responsive design.",
+                "tags": [
+                    "React",
+                    "Framer Motion"
+                ],
+                "link": "#",
+                "image": "/images/projects/landing-page.jpg"
+            },
+            {
+                "title": "Task Management App",
+                "description": "Simple kanban board application for team productivity, featuring drag-and-drop functionality between task status columns.",
+                "tags": [
+                    "JavaScript",
+                    "CSS3",
+                    "HTML5"
+                ],
+                "link": "#",
+                "image": "/images/projects/kanban.jpg"
+            }
+        ],
+        "ui": {
+            "halo": "Hello, I'm",
+            "viewProjects": "View Projects",
+            "contactMe": "Contact Me",
+            "aboutMe": "About Me",
+            "descTitle": "Personal Description",
+            "downloadCv": "Download My CV",
+            "skillsTitle": "Skills & Tools",
+            "focusTitle": "Focus Areas",
+            "education": "Education",
+            "experience": "Work Experience",
+            "projects": "Selected Works",
+            "viewGithub": "View My GitHub",
+            "contactTitle": "Let's Connect",
+            "contactDesc": "Interested in working together or just saying hi? Feel free to send a message via the form below.",
+            "contactInfo": "Contact Information",
+            "email": "Email",
+            "location": "Location",
+            "fullName": "Full Name",
+            "subject": "Subject",
+            "message": "Message",
+            "sendMessage": "Send Message",
+            "namePlaceholder": "John Doe",
+            "subjectPlaceholder": "Project Offer",
+            "messagePlaceholder": "Tell me how I can help you..."
+        }
+    }
+}
