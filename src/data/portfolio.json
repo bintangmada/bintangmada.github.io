@@ -1,7 +1,7 @@
 {
     "id": {
         "personal": {
-            "name": "Bintang Suharsono",
+            "name": "Bintang Mada",
             "shortName": "Bintang",
             "role": "Web Developer",
             "greeting": "Selamat Datang di Portofolio Saya",
@@ -172,7 +172,7 @@
     },
     "en": {
         "personal": {
-            "name": "Bintang Suharsono",
+            "name": "Bintang Mada",
             "shortName": "Bintang",
             "role": "Web Developer",
             "greeting": "Welcome to My Portfolio",
