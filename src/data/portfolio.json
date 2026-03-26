@@ -5,7 +5,7 @@
             "shortName": "Bintang",
             "role": "Java Developer",
             "greeting": "Selamat Datang di Portofolio Saya",
-            "shortDescription": "Saya seorang Web Developer yang antusias dalam menciptakan antarmuka digital yang indah, responsif, dan mudah digunakan.",
+            "shortDescription": "Java Developer dengan pengalaman praktis dalam mengembangkan dan memelihara aplikasi enterprise, terutama menggunakan Java Spring Boot.",
             "email": "bintang.mada@gmail.com",
             "location": "Jakarta, Indonesia",
             "github": "https://github.com/bintangmada",
@@ -67,13 +67,13 @@
             ],
             "focusAreas": [
                 {
-                    "title": "Frontend Development",
-                    "description": "Membangun antarmuka interaktif menggunakan React dan ekosistem moderen.",
+                    "title": "Backend & Fullstack Development",
+                    "description": "Terampil dalam pengembangan backend dan fullstack, dengan rekam jejak memberikan hasil kerja yang baik dalam tim maupun mandiri.",
                     "icon": "code"
                 },
                 {
-                    "title": "Responsive Design",
-                    "description": "Desain adaptif yang bekerja sempurna di Mobile, Tablet, maupun Desktop.",
+                    "title": "Database & Vendor Systems",
+                    "description": "Berpengalaman dalam manajemen database dan pengembangan sistem manajemen vendor untuk skala enterprise.",
                     "icon": "device"
                 }
             ]
@@ -82,7 +82,7 @@
             {
                 "degree": "Sarjana Teknik Informatika / Ilmu Komputer",
                 "institution": "Universitas Brawijaya",
-                "year": "",
+                "year": "2015",
                 "description": "Fokus: Jaringan Komputer, Keamanan Jaringan, dan Sistem Terdistribusi (IPK: 3.31)"
             },
             {
@@ -250,9 +250,9 @@
         "personal": {
             "name": "Bintang Mada",
             "shortName": "Bintang",
-            "role": "Web Developer",
+            "role": "Java Developer",
             "greeting": "Welcome to My Portfolio",
-            "shortDescription": "I am an enthusiastic Web Developer dedicated to creating beautiful, responsive, and user-friendly digital interfaces.",
+            "shortDescription": "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
             "email": "bintang.mada@gmail.com",
             "location": "Jakarta, Indonesia",
             "github": "#",
@@ -314,13 +314,13 @@
             ],
             "focusAreas": [
                 {
-                    "title": "Frontend Development",
-                    "description": "Building interactive interfaces using React and the modern ecosystem.",
+                    "title": "Backend & Fullstack Development",
+                    "description": "Skilled in backend and fullstack development, with a proven ability to deliver results in team-based and independent environments.",
                     "icon": "code"
                 },
                 {
-                    "title": "Responsive Design",
-                    "description": "Adaptive design that works perfectly on Mobile, Tablet, and Desktop.",
+                    "title": "Database & Vendor Systems",
+                    "description": "Experienced in database management and vendor management systems for enterprise applications.",
                     "icon": "device"
                 }
             ]
@@ -329,7 +329,7 @@
             {
                 "degree": "Bachelor Degree in Informatics / Computer Science",
                 "institution": "Brawijaya University",
-                "year": "",
+                "year": "2015",
                 "description": "Focus: Computer Networking, Network Security, and Distributed Systems. GPA : 3.31"
             },
             {
