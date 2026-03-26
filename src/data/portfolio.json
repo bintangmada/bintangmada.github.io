@@ -161,7 +161,7 @@
                     "Vendor Management"
                 ],
                 "link": "#",
-                "image": "/images/projects/ecommerce.jpg"
+                "image": "/images/projects/thumbnails/vendor-management.png"
             },
             {
                 "title": "Session Management System with Redis",
@@ -172,7 +172,7 @@
                     "Backend"
                 ],
                 "link": "#",
-                "image": "/images/projects/landing-page.jpg"
+                "image": "/images/projects/thumbnails/session-management.png"
             },
             {
                 "title": "Asset Management System with Spring Boot",
@@ -183,7 +183,7 @@
                     "Asset Management"
                 ],
                 "link": "#",
-                "image": "/images/projects/kanban.jpg"
+                "image": "/images/projects/thumbnails/asset-management.png"
             },
             {
                 "title": "HR Schema CRUD",
@@ -194,7 +194,7 @@
                     "SQL"
                 ],
                 "link": "#",
-                "image": "/images/projects/ecommerce.jpg"
+                "image": "/images/projects/thumbnails/hr-schema.png"
             },
             {
                 "title": "IoT Fog Computing System for Mushrooms Cultivation",
@@ -205,7 +205,7 @@
                     "Hardware"
                 ],
                 "link": "#",
-                "image": "/images/projects/landing-page.jpg"
+                "image": "/images/projects/thumbnails/iot-mushrooms.png"
             },
             {
                 "title": "Clothing Store Landing Page & PWA",
@@ -216,7 +216,7 @@
                     "Frontend"
                 ],
                 "link": "#",
-                "image": "/images/projects/kanban.jpg"
+                "image": "/images/projects/thumbnails/clothing-store.png"
             }
         ],
         "ui": {
@@ -408,7 +408,7 @@
                     "Vendor Management"
                 ],
                 "link": "#",
-                "image": "/images/projects/ecommerce.jpg"
+                "image": "/images/projects/thumbnails/vendor-management.png"
             },
             {
                 "title": "Session Management System with Redis",
@@ -419,7 +419,7 @@
                     "Backend"
                 ],
                 "link": "#",
-                "image": "/images/projects/landing-page.jpg"
+                "image": "/images/projects/thumbnails/session-management.png"
             },
             {
                 "title": "Asset Management System with Spring Boot",
@@ -430,7 +430,7 @@
                     "Asset Management"
                 ],
                 "link": "#",
-                "image": "/images/projects/kanban.jpg"
+                "image": "/images/projects/thumbnails/asset-management.png"
             },
             {
                 "title": "HR Schema CRUD",
@@ -441,7 +441,7 @@
                     "SQL"
                 ],
                 "link": "#",
-                "image": "/images/projects/ecommerce.jpg"
+                "image": "/images/projects/thumbnails/hr-schema.png"
             },
             {
                 "title": "IoT Fog Computing System for Mushrooms Cultivation",
@@ -452,7 +452,7 @@
                     "Hardware"
                 ],
                 "link": "#",
-                "image": "/images/projects/landing-page.jpg"
+                "image": "/images/projects/thumbnails/iot-mushrooms.png"
             },
             {
                 "title": "Clothing Store Landing Page & PWA",
@@ -463,7 +463,7 @@
                     "Frontend"
                 ],
                 "link": "#",
-                "image": "/images/projects/kanban.jpg"
+                "image": "/images/projects/thumbnails/clothing-store.png"
             }
         ],
         "ui": {
