@@ -1,0 +1,496 @@
+{
+    "id": {
+        "personal": {
+            "name": "Bintang Mada",
+            "shortName": "Bintang",
+            "role": "Java Developer",
+            "greeting": "Selamat Datang di Portofolio Saya",
+            "shortDescription": "Java Developer dengan pengalaman praktis dalam mengembangkan dan memelihara aplikasi enterprise, terutama menggunakan Java Spring Boot.",
+            "email": "bintang.mada@gmail.com",
+            "location": "Jakarta, Indonesia",
+            "github": "https://github.com/bintangmada",
+            "linkedin": "https://www.linkedin.com/in/bintang-mada/",
+            "image": "/images/profile/profile.png"
+        },
+        "navLinks": [
+            {
+                "name": "Beranda",
+                "href": "#home"
+            },
+            {
+                "name": "Tentang",
+                "href": "#about"
+            },
+            {
+                "name": "Pendidikan",
+                "href": "#education"
+            },
+            {
+                "name": "Pengalaman",
+                "href": "#experience"
+            },
+            {
+                "name": "Proyek",
+                "href": "#projects"
+            },
+            {
+                "name": "Kontak",
+                "href": "#contact"
+            }
+        ],
+        "about": {
+            "paragraphs": [
+                "Saya seorang Java Developer dengan pengalaman langsung dalam mengembangkan dan memelihara aplikasi enterprise, terutama menggunakan Java Spring Boot.",
+                "Terampil dalam pengembangan backend dan fullstack, manajemen database, serta sistem manajemen vendor. Memiliki kemampuan yang terbukti dalam memberikan hasil kerja baik dalam tim maupun secara mandiri."
+            ],
+            "skills": [
+                "Java",
+                "SQL",
+                "JavaScript",
+                "Spring Boot",
+                "Bootstrap",
+                "MySQL",
+                "Oracle",
+                "Redis",
+                "IntelliJ IDEA",
+                "SQL Developer",
+                "GitLab",
+                "GitHub",
+                "Postman",
+                "VS Code",
+                "Figma",
+                "Trello",
+                "Windows 11",
+                "MacOS",
+                "FileZilla",
+                "MS Office"
+            ],
+            "focusAreas": [
+                {
+                    "title": "Backend & Fullstack Development",
+                    "description": "Terampil dalam pengembangan backend dan fullstack, dengan rekam jejak memberikan hasil kerja yang baik dalam tim maupun mandiri.",
+                    "icon": "code"
+                },
+                {
+                    "title": "Database & Vendor Systems",
+                    "description": "Berpengalaman dalam manajemen database dan pengembangan sistem manajemen vendor untuk skala enterprise.",
+                    "icon": "device"
+                }
+            ]
+        },
+        "educations": [
+            {
+                "degree": "Sarjana Teknik Informatika / Ilmu Komputer",
+                "institution": "Universitas Brawijaya",
+                "year": "2015",
+                "description": "Fokus: Jaringan Komputer, Keamanan Jaringan, dan Sistem Terdistribusi (IPK: 3.31)"
+            },
+            {
+                "degree": "Java Coding Camp",
+                "institution": "PT Mitra Integrasi Informatika",
+                "year": "2022-2023",
+                "description": "Pelatihan dan Sertifikasi."
+            },
+            {
+                "degree": "Fullstack Web Designer",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Pelatihan dan Sertifikasi."
+            },
+            {
+                "degree": "Progressive Web Apps",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Pelatihan dan Sertifikasi."
+            }
+        ],
+        "experiences": [
+            {
+                "role": "Developer",
+                "company": "Bank Negara Indonesia (Persero)",
+                "duration": "Mar 2023 - Sekarang",
+                "description": "Mengembangkan dan memelihara aplikasi manajemen vendor (internal & eksternal). Menangani registrasi vendor, kontrak, dan pelacakan personel alih daya (outsource). Membuat fitur pelaporan dan dasbor pemantauan.",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
+                ]
+            },
+            {
+                "role": "Application Developer Jr.",
+                "company": "PT Mitra Integrasi Informatika",
+                "duration": "Nov 2022 - Sekarang",
+                "description": "Membangun sistem backend dengan Java Spring Boot. Membuat proyek fullstack menggunakan Java, Thymeleaf, HTML, CSS, dan JS.",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Thymeleaf",
+                    "HTML/CSS/JS"
+                ]
+            },
+            {
+                "role": "IT Developer",
+                "company": "Aan Safaat Permadi & Partners",
+                "duration": "Jan 2019 - Apr 2019",
+                "description": "Merancang dan mengembangkan sistem captive portal menggunakan Raspberry Pi. Mengintegrasikan FreeRadius, DaloRadius, dan CoovaChilli.",
+                "tags": [
+                    "Raspberry Pi",
+                    "FreeRadius",
+                    "DaloRadius",
+                    "CoovaChilli"
+                ]
+            },
+            {
+                "role": "IT Infrastructure Staff",
+                "company": "Universitas Brawijaya",
+                "duration": "Jun 2018 - Agt 2018",
+                "description": "Melakukan refaktor website fakultas dan memelihara fasilitas jaringan.",
+                "tags": [
+                    "Infrastructure",
+                    "Network"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "Vendor Management Enhancement",
+                "description": "Sistem peningkatan manajemen vendor untuk kebutuhan enterprise. (Tahun: 2025)",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/vendor-management.png"
+            },
+            {
+                "title": "Session Management System with Redis",
+                "description": "Sistem manajemen sesi pengguna menggunakan Redis untuk aplikasi berskala besar. (Tahun: 2023)",
+                "tags": [
+                    "Redis",
+                    "Java",
+                    "Backend"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/session-management.png"
+            },
+            {
+                "title": "Asset Management System with Spring Boot",
+                "description": "Aplikasi manajemen aset berbasis Spring Boot. (Tahun: 2022)",
+                "tags": [
+                    "Spring Boot",
+                    "Java",
+                    "Asset Management"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/asset-management.png"
+            },
+            {
+                "title": "HR Schema CRUD",
+                "description": "Operasi CRUD sederhana untuk skema HR. (Tahun: 2022)",
+                "tags": [
+                    "CRUD",
+                    "Database",
+                    "SQL"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/hr-schema.png"
+            },
+            {
+                "title": "IoT Fog Computing System for Mushrooms Cultivation",
+                "description": "Sistem komputasi fog berbasis IoT untuk budidaya jamur. (Tahun: 2021)",
+                "tags": [
+                    "IoT",
+                    "Fog Computing",
+                    "Hardware"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/iot-mushrooms.png"
+            },
+            {
+                "title": "Clothing Store Landing Page & PWA",
+                "description": "Halaman landing untuk toko pakaian dengan fitur Progressive Web App (PWA). (Tahun: 2020)",
+                "tags": [
+                    "PWA",
+                    "Landing Page",
+                    "Frontend"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/clothing-store.png"
+            }
+        ],
+        "ui": {
+            "halo": "Halo, Saya",
+            "viewProjects": "Lihat Proyek",
+            "contactMe": "Hubungi Saya",
+            "aboutMe": "Tentang Saya",
+            "descTitle": "Deskripsi Diri",
+            "downloadCv": "Unduh CV Saya",
+            "skillsTitle": "Keahlian & Tools",
+            "focusTitle": "Area Fokus",
+            "education": "Pendidikan",
+            "experience": "Pengalaman Kerja",
+            "projects": "Karya Pilihan",
+            "viewGithub": "Lihat GitHub Saya",
+            "contactTitle": "Mari Terhubung",
+            "contactDesc": "Tertarik untuk bekerja sama atau sekadar menyapa? Jangan ragu untuk mengirimkan pesan melalui form di bawah ini.",
+            "contactInfo": "Informasi Kontak",
+            "email": "Email",
+            "location": "Lokasi",
+            "fullName": "Nama Lengkap",
+            "subject": "Subjek",
+            "message": "Pesan",
+            "sendMessage": "Kirim Pesan",
+            "namePlaceholder": "John Doe",
+            "subjectPlaceholder": "Tawaran Proyek",
+            "messagePlaceholder": "Ceritakan bagaimana saya bisa membantu Anda..."
+        }
+    },
+    "en": {
+        "personal": {
+            "name": "Bintang Mada",
+            "shortName": "Bintang",
+            "role": "Java Developer",
+            "greeting": "Welcome to My Portfolio",
+            "shortDescription": "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
+            "email": "bintang.mada@gmail.com",
+            "location": "Jakarta, Indonesia",
+            "github": "#",
+            "linkedin": "#",
+            "image": "/images/profile/profile.png"
+        },
+        "navLinks": [
+            {
+                "name": "Home",
+                "href": "#home"
+            },
+            {
+                "name": "About",
+                "href": "#about"
+            },
+            {
+                "name": "Education",
+                "href": "#education"
+            },
+            {
+                "name": "Experience",
+                "href": "#experience"
+            },
+            {
+                "name": "Projects",
+                "href": "#projects"
+            },
+            {
+                "name": "Contact",
+                "href": "#contact"
+            }
+        ],
+        "about": {
+            "paragraphs": [
+                "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
+                "Skilled in backend and fullstack development, database management, and vendor management systems. Proven ability to deliver results in team-based and independent environments."
+            ],
+            "skills": [
+                "Java",
+                "SQL",
+                "JavaScript",
+                "Spring Boot",
+                "Bootstrap",
+                "MySQL",
+                "Oracle",
+                "Redis",
+                "IntelliJ IDEA",
+                "SQL Developer",
+                "GitLab",
+                "GitHub",
+                "Postman",
+                "VS Code",
+                "Figma",
+                "Trello",
+                "Windows 11",
+                "MacOS",
+                "FileZilla",
+                "MS Office"
+            ],
+            "focusAreas": [
+                {
+                    "title": "Backend & Fullstack Development",
+                    "description": "Skilled in backend and fullstack development, with a proven ability to deliver results in team-based and independent environments.",
+                    "icon": "code"
+                },
+                {
+                    "title": "Database & Vendor Systems",
+                    "description": "Experienced in database management and vendor management systems for enterprise applications.",
+                    "icon": "device"
+                }
+            ]
+        },
+        "educations": [
+            {
+                "degree": "Bachelor Degree in Informatics / Computer Science",
+                "institution": "Brawijaya University",
+                "year": "2015",
+                "description": "Focus: Computer Networking, Network Security, and Distributed Systems. GPA : 3.31"
+            },
+            {
+                "degree": "Java Coding Camp",
+                "institution": "PT Mitra Integrasi Informatika",
+                "year": "2022-2023",
+                "description": "Training and Certification."
+            },
+            {
+                "degree": "Fullstack Web Designer",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Training and Certification."
+            },
+            {
+                "degree": "Progressive Web Apps",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Training and Certification."
+            }
+        ],
+        "experiences": [
+            {
+                "role": "Developer",
+                "company": "Bank Negara Indonesia (Persero)",
+                "duration": "Mar 2023 - Present",
+                "description": "Developed and maintained vendor management applications (internal & external). Handled vendor registration, contracts, and outsourced personnel tracking. Created reporting features and monitoring dashboards.",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
+                ]
+            },
+            {
+                "role": "Application Developer Jr.",
+                "company": "PT Mitra Integrasi Informatika",
+                "duration": "Nov 2022 - Present",
+                "description": "Built backend systems with Java Spring Boot. Created fullstack projects using Java, Thymeleaf, HTML, CSS, and JS.",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Thymeleaf",
+                    "HTML/CSS/JS"
+                ]
+            },
+            {
+                "role": "IT Developer",
+                "company": "Aan Safaat Permadi & Partners",
+                "duration": "Jan 2019 - Apr 2019",
+                "description": "Designed and developed captive portal system using Raspberry Pi. Integrated FreeRadius, DaloRadius, and CoovaChilli.",
+                "tags": [
+                    "Raspberry Pi",
+                    "FreeRadius",
+                    "DaloRadius",
+                    "CoovaChilli"
+                ]
+            },
+            {
+                "role": "IT Infrastructure Staff",
+                "company": "Brawijaya University",
+                "duration": "Jun 2018 - Aug 2018",
+                "description": "Refactored faculty website and maintained network facilities.",
+                "tags": [
+                    "Infrastructure",
+                    "Network"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "Vendor Management Enhancement",
+                "description": "An enhanced vendor management system for enterprise needs. (Year: 2025)",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Vendor Management"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/vendor-management.png"
+            },
+            {
+                "title": "Session Management System with Redis",
+                "description": "User session management system using Redis for scalable applications. (Year: 2023)",
+                "tags": [
+                    "Redis",
+                    "Java",
+                    "Backend"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/session-management.png"
+            },
+            {
+                "title": "Asset Management System with Spring Boot",
+                "description": "Asset management application built with Spring Boot. (Year: 2022)",
+                "tags": [
+                    "Spring Boot",
+                    "Java",
+                    "Asset Management"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/asset-management.png"
+            },
+            {
+                "title": "HR Schema CRUD",
+                "description": "Simple CRUD operations for HR schemas. (Year: 2022)",
+                "tags": [
+                    "CRUD",
+                    "Database",
+                    "SQL"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/hr-schema.png"
+            },
+            {
+                "title": "IoT Fog Computing System for Mushrooms Cultivation",
+                "description": "IoT-based fog computing system for mushroom cultivation. (Year: 2021)",
+                "tags": [
+                    "IoT",
+                    "Fog Computing",
+                    "Hardware"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/iot-mushrooms.png"
+            },
+            {
+                "title": "Clothing Store Landing Page & PWA",
+                "description": "Landing page and Progressive Web App (PWA) for a clothing store. (Year: 2020)",
+                "tags": [
+                    "PWA",
+                    "Landing Page",
+                    "Frontend"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/clothing-store.png"
+            }
+        ],
+        "ui": {
+            "halo": "Hello, I'm",
+            "viewProjects": "View Projects",
+            "contactMe": "Contact Me",
+            "aboutMe": "About Me",
+            "descTitle": "Personal Description",
+            "downloadCv": "Download My CV",
+            "skillsTitle": "Skills & Tools",
+            "focusTitle": "Focus Areas",
+            "education": "Education",
+            "experience": "Work Experience",
+            "projects": "Selected Works",
+            "viewGithub": "View My GitHub",
+            "contactTitle": "Let's Connect",
+            "contactDesc": "Interested in working together or just saying hi? Feel free to send a message via the form below.",
+            "contactInfo": "Contact Information",
+            "email": "Email",
+            "location": "Location",
+            "fullName": "Full Name",
+            "subject": "Subject",
+            "message": "Message",
+            "sendMessage": "Send Message",
+            "namePlaceholder": "John Doe",
+            "subjectPlaceholder": "Project Offer",
+            "messagePlaceholder": "Tell me how I can help you..."
+        }
+    }
+}
