@@ -56,7 +56,7 @@ const Navbar = ({ data, lang, setLang }) => {
                         <div className="flex items-center gap-3">
                             <button
                                 onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
-                                className="flex items-center p-0.5 rounded-md bg-gray-200 dark:bg-gray-800 text-xs font-bold transition-colors"
+                                className="flex items-center p-0.5 rounded-md bg-gray-200 dark:bg-gray-800 text-xs font-bold transition-colors cursor-pointer"
                                 aria-label="Toggle Language"
                             >
                                 <span className={`px-2 py-1 rounded-sm transition-all ${lang === 'id' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'}`}>ID</span>
@@ -65,7 +65,7 @@ const Navbar = ({ data, lang, setLang }) => {
 
                             <button
                                 onClick={() => setIsDark(!isDark)}
-                                className="p-2 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-amber-400 focus:outline-none transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                                className="p-2 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-amber-400 focus:outline-none transition-colors rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
                                 aria-label="Toggle Dark Mode"
                             >
                                 {isDark ? (
@@ -80,7 +80,7 @@ const Navbar = ({ data, lang, setLang }) => {
                     <div className="md:hidden flex items-center gap-2">
                         <button
                             onClick={() => setLang(lang === 'id' ? 'en' : 'id')}
-                            className="flex items-center p-0.5 rounded-md bg-gray-200 dark:bg-gray-800 text-xs font-bold transition-colors"
+                            className="flex items-center p-0.5 rounded-md bg-gray-200 dark:bg-gray-800 text-xs font-bold transition-colors cursor-pointer"
                             aria-label="Toggle Language"
                         >
                             <span className={`px-2 py-1 rounded-sm transition-all ${lang === 'id' ? 'bg-white dark:bg-gray-600 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 dark:text-gray-400'}`}>ID</span>
@@ -88,7 +88,7 @@ const Navbar = ({ data, lang, setLang }) => {
                         </button>
                         <button
                             onClick={() => setIsDark(!isDark)}
-                            className="p-2 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-amber-400 focus:outline-none transition-colors"
+                            className="p-2 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-amber-400 focus:outline-none transition-colors cursor-pointer"
                         >
                             {isDark ? (
                                 <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
