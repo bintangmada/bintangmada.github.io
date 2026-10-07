@@ -5,12 +5,9 @@ const Contact = ({ data }) => {
     <section id="contact" className="py-16 md:py-24 border-t border-border-light dark:border-border-dark flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mt-12">
       
       <div className="flex-1 max-w-lg">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-light dark:text-accent-dark-text mb-2 block">
-                LET'S CONNECT
-            </span>
             <h2 className="text-3xl font-bold mb-4">{ui.contactTitle || "Let's Connect"}</h2>
         <p className="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed">
-          I'm open to new opportunities, collaborations, <br className="hidden md:block" /> or just a friendly chat.
+          {ui.contactDesc}
         </p>
       </div>
 

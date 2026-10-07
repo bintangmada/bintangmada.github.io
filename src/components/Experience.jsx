@@ -1,5 +1,9 @@
-const Experience = ({ data }) => {
+import { calculateDuration } from '../utils/dateUtils';
+
+const Experience = ({ data, lang }) => {
     const { experiences, ui } = data;
+
+
 
     return (
         <section id="experience" className="flex flex-col gap-8">
@@ -22,6 +26,9 @@ const Experience = ({ data }) => {
                         <div className="md:w-1/4 flex flex-col pt-1">
                             <span className="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark md:text-right md:pr-12">
                                 {exp.duration}
+                            </span>
+                            <span className="text-xs font-medium text-text-muted-light/70 dark:text-text-muted-dark/70 md:text-right md:pr-12 mt-1">
+                                {calculateDuration(exp.duration, lang)}
                             </span>
                         </div>
                         

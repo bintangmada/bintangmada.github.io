@@ -1,3 +1,5 @@
+import GithubActivity from './GithubActivity';
+
 const About = ({ data }) => {
     const { about, ui, personal } = data;
 
@@ -52,6 +54,7 @@ const About = ({ data }) => {
                 </div>
             </div>
 
+            <GithubActivity ui={ui} />
         </section>
     );
 };

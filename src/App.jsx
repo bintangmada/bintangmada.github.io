@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useLanguage } from './hooks/useLanguage';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -11,13 +12,7 @@ import Footer from './components/Footer';
 import portfolioDict from './data/portfolio.json';
 
 function App() {
-  const [lang, setLang] = useState(() => {
-    return localStorage.getItem('lang') || 'id';
-  });
-
-  useEffect(() => {
-    localStorage.setItem('lang', lang);
-  }, [lang]);
+  const { lang, setLang } = useLanguage();
 
   const data = portfolioDict[lang];
 
@@ -32,7 +27,7 @@ function App() {
           <About data={data} />
           <Skills />
           <Education data={data} />
-          <Experience data={data} />
+          <Experience data={data} lang={lang} />
           <Contact data={data} />
         </main>
         <Footer />

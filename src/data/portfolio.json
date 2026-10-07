@@ -41,7 +41,7 @@
         "about": {
             "paragraphs": [
                 "Saya seorang Java Developer dengan pengalaman langsung dalam mengembangkan dan memelihara aplikasi enterprise, terutama menggunakan Java Spring Boot.",
-                "Terampil dalam pengembangan backend dan fullstack, manajemen database, serta sistem manajemen vendor. Memiliki kemampuan yang terbukti dalam memberikan hasil kerja baik dalam tim maupun secara mandiri."
+                "Terampil dalam pengembangan backend dan fullstack, serta manajemen database. Memiliki kemampuan yang terbukti dalam memberikan hasil kerja baik dalam tim maupun secara mandiri."
             ],
             "skills": [
                 "Java",
@@ -226,8 +226,9 @@
             "projects": "Karya Pilihan",
             "viewGithub": "Lihat GitHub Saya",
             "contactTitle": "Mari Terhubung",
-            "contactDesc": "Tertarik untuk bekerja sama atau sekadar menyapa? Jangan ragu untuk mengirimkan pesan melalui form di bawah ini.",
+            "contactDesc": "Saya terbuka untuk peluang baru dan kolaborasi.",
             "contactInfo": "Informasi Kontak",
+            "githubActivity": "Kontribusi GitHub Saya",
             "email": "Email",
             "location": "Lokasi",
             "fullName": "Nama Lengkap",
@@ -300,8 +301,8 @@
             "shortDescription": "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
             "email": "bintangmadas@gmail.com",
             "location": "Jakarta, Indonesia",
-            "github": "#",
-            "linkedin": "#",
+            "github": "https://github.com/bintangmada",
+            "linkedin": "https://www.linkedin.com/in/bintang-mada/",
             "image": "/images/profile/profile.png"
         },
         "navLinks": [
@@ -333,7 +334,7 @@
         "about": {
             "paragraphs": [
                 "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
-                "Skilled in backend and fullstack development, database management, and vendor management systems. Proven ability to deliver results in team-based and independent environments."
+                "Skilled in backend and fullstack development, and database management. Proven ability to deliver results in team-based and independent environments."
             ],
             "skills": [
                 "Java",
@@ -518,8 +519,9 @@
             "projects": "Selected Works",
             "viewGithub": "View My GitHub",
             "contactTitle": "Let's Connect",
-            "contactDesc": "Interested in working together or just saying hi? Feel free to send a message via the form below.",
+            "contactDesc": "I'm open to new opportunities and collaborations.",
             "contactInfo": "Contact Information",
+            "githubActivity": "My GitHub Contributions",
             "email": "Email",
             "location": "Location",
             "fullName": "Full Name",

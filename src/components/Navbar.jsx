@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useDarkMode } from '../hooks/useTheme';
 
 const Navbar = ({ data, lang, setLang }) => {
     const links = [
@@ -9,16 +10,7 @@ const Navbar = ({ data, lang, setLang }) => {
         { name: 'Contact', href: '#contact' },
     ];
 
-    const [isDark, setIsDark] = useState(() => {
-        if (typeof window !== 'undefined') {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                return savedTheme === 'dark';
-            }
-            return window.matchMedia('(prefers-color-scheme: dark)').matches;
-        }
-        return false;
-    });
+    const { isDark, toggleDark } = useDarkMode();
 
     const [activeSection, setActiveSection] = useState('home');
     const [menuOpen, setMenuOpen] = useState(false);
@@ -46,15 +38,7 @@ const Navbar = ({ data, lang, setLang }) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-    useEffect(() => {
-        if (isDark) {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-        }
-    }, [isDark]);
+
 
     return (
         <nav className="sticky top-0 w-full pt-4 pb-4 flex justify-between items-center z-50 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
@@ -99,7 +83,7 @@ const Navbar = ({ data, lang, setLang }) => {
                 </div>
 
                 <button
-                    onClick={() => setIsDark(!isDark)}
+                    onClick={toggleDark}
                     className="text-text-muted-light dark:text-text-muted-dark hover:text-accent-light dark:hover:text-accent-dark-text transition-colors p-2 cursor-pointer"
                     aria-label="Toggle Dark Mode"
                 >

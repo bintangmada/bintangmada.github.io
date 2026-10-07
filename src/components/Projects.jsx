@@ -16,9 +16,9 @@ const Projects = ({ data }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
         {projects.map((project, index) => (
-          <div key={index} className="bg-card-light dark:bg-card-dark rounded-3xl p-6 border border-border-light dark:border-border-dark flex flex-col hover:shadow-md transition-shadow">
+          <div key={index} className="bg-card-light dark:bg-card-dark rounded-3xl overflow-hidden border border-border-light dark:border-border-dark flex flex-col hover:shadow-md transition-shadow">
             
-            <div className="w-full h-48 md:h-56 bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden mb-6">
+            <div className="w-full h-48 md:h-56 bg-gray-200 dark:bg-gray-800">
               {project.image && project.image !== "" ? (
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
               ) : (
@@ -28,7 +28,7 @@ const Projects = ({ data }) => {
               )}
             </div>
 
-            <div className="flex flex-col flex-1">
+            <div className="flex flex-col flex-1 p-6">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-sm text-text-muted-light dark:text-text-muted-dark mb-6 leading-relaxed flex-1">
                 {project.description}
