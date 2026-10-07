@@ -58,16 +58,19 @@ const Hero = ({ data }) => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                 >
-                    <div className="relative w-72 h-72 md:w-96 md:h-96">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-full animate-spin-slow opacity-20 blur-xl"></div>
-                        <div className="w-full h-full bg-gray-200 dark:bg-gray-800 rounded-full border-4 border-white dark:border-gray-900 shadow-2xl overflow-hidden flex items-center justify-center relative z-10">
-                            {personal.image && personal.image !== "" ? (
-                                <img src={personal.image} alt={personal.name} className="w-full h-full object-cover" />
-                            ) : (
-                                <svg className="w-32 h-32 text-gray-400 dark:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                                </svg>
-                            )}
+                    <div className="relative w-72 h-72 md:w-96 md:h-96 group mx-auto">
+                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-full animate-spin-slow opacity-30 group-hover:opacity-60 blur-2xl transition-opacity duration-700"></div>
+                        <div className="absolute inset-2 bg-gradient-to-bl from-blue-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-700"></div>
+                        <div className="w-full h-full rounded-full p-1 bg-gradient-to-tr from-blue-400 via-purple-500 to-blue-600 shadow-2xl relative z-10 transform transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-blue-500/25">
+                            <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center border-4 border-white dark:border-gray-950 bg-white dark:bg-gray-900">
+                                {personal.image && personal.image !== "" ? (
+                                    <img src={personal.image} alt={personal.name} className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
+                                ) : (
+                                    <svg className="w-32 h-32 text-gray-400 dark:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </motion.div>
