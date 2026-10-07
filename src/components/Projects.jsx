@@ -15,7 +15,7 @@ const Projects = ({ data }) => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
-        {projects.map((project, index) => (
+        {projects.filter(p => !p.hidden).map((project, index) => (
           <div key={index} className="bg-card-light dark:bg-card-dark rounded-3xl overflow-hidden border border-border-light dark:border-border-dark flex flex-col hover:shadow-md transition-shadow">
             
             <div className="w-full h-48 md:h-56 bg-gray-200 dark:bg-gray-800">
@@ -42,9 +42,9 @@ const Projects = ({ data }) => {
                       </span>
                     ))}
                   </div>
-                  <a href={project.link} target="_blank" rel="noreferrer" className="text-text-muted-light dark:text-text-muted-dark hover:text-accent-light dark:hover:text-accent-dark-text transition-colors p-2">
+                  {/* <a href={project.link} target="_blank" rel="noreferrer" className="text-text-muted-light dark:text-text-muted-dark hover:text-accent-light dark:hover:text-accent-dark-text transition-colors p-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                  </a>
+                  </a> */}
               </div>
             </div>
             

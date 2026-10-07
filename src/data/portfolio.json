@@ -107,7 +107,9 @@
                     "Java",
                     "Spring Boot",
                     "Thymeleaf",
-                    "HTML/CSS/JS"
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
                 ]
             },
             {
@@ -151,7 +153,7 @@
                 "tags": [
                     "Java",
                     "Spring Boot",
-                    "Vendor Management"
+                    "Oracle"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/vendor-management.png"
@@ -162,7 +164,7 @@
                 "tags": [
                     "Redis",
                     "Java",
-                    "Backend"
+                    "Spring Boot"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/session-management.png"
@@ -173,16 +175,22 @@
                 "tags": [
                     "Spring Boot",
                     "Java",
-                    "Asset Management"
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Bootstrap",
+                    "MySQL",
+                    "Thymeleaf"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/asset-management.png"
             },
             {
                 "title": "HR Schema CRUD",
+                "hidden": true,
                 "description": "Operasi CRUD sederhana untuk skema HR. (Tahun: 2022)",
                 "tags": [
-                    "CRUD",
+                    "Oracle",
                     "Database",
                     "SQL"
                 ],
@@ -195,18 +203,23 @@
                 "tags": [
                     "IoT",
                     "Fog Computing",
-                    "Hardware"
+                    "Raspberry Pi 3 B+",
+                    "Network",
+                    "Python"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/iot-mushrooms.png"
             },
             {
                 "title": "Clothing Store Landing Page & PWA",
+                "hidden": true,
                 "description": "Halaman landing untuk toko pakaian dengan fitur Progressive Web App (PWA). (Tahun: 2020)",
                 "tags": [
-                    "PWA",
-                    "Landing Page",
-                    "Frontend"
+                    "Progressive Web App",
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Bootstrap"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/clothing-store.png"
@@ -400,7 +413,9 @@
                     "Java",
                     "Spring Boot",
                     "Thymeleaf",
-                    "HTML/CSS/JS"
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
                 ]
             },
             {
@@ -444,7 +459,7 @@
                 "tags": [
                     "Java",
                     "Spring Boot",
-                    "Vendor Management"
+                    "Oracle"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/vendor-management.png"
@@ -455,7 +470,7 @@
                 "tags": [
                     "Redis",
                     "Java",
-                    "Backend"
+                    "Spring Boot"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/session-management.png"
@@ -466,16 +481,22 @@
                 "tags": [
                     "Spring Boot",
                     "Java",
-                    "Asset Management"
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Bootstrap",
+                    "MySQL",
+                    "Thymeleaf"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/asset-management.png"
             },
             {
                 "title": "HR Schema CRUD",
+                "hidden": true,
                 "description": "Simple CRUD operations for HR schemas. (Year: 2022)",
                 "tags": [
-                    "CRUD",
+                    "Oracle",
                     "Database",
                     "SQL"
                 ],
@@ -488,18 +509,23 @@
                 "tags": [
                     "IoT",
                     "Fog Computing",
-                    "Hardware"
+                    "Raspberry Pi 3 B+",
+                    "Network",
+                    "Python"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/iot-mushrooms.png"
             },
             {
                 "title": "Clothing Store Landing Page & PWA",
+                "hidden": true,
                 "description": "Landing page and Progressive Web App (PWA) for a clothing store. (Year: 2020)",
                 "tags": [
-                    "PWA",
-                    "Landing Page",
-                    "Frontend"
+                    "Progressive Web App",
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Bootstrap"
                 ],
                 "link": "#",
                 "image": "/images/projects/thumbnails/clothing-store.png"

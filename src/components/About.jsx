@@ -1,7 +1,7 @@
 import GithubActivity from './GithubActivity';
 
 const About = ({ data }) => {
-    const { about, ui, personal } = data;
+    const { about, ui, personal, projects } = data;
 
     return (
         <section id="about" className="flex flex-col gap-16">
@@ -43,7 +43,7 @@ const About = ({ data }) => {
 
                 <div className="bg-card-light dark:bg-card-dark rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-border-light dark:border-border-dark">
                     <svg className="w-8 h-8 text-accent-light dark:text-accent-dark-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                    <span className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-1">3</span>
+                    <span className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-1">{projects?.filter(p => !p.hidden).length || 0}</span>
                     <span className="text-xs text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider font-semibold">Projects</span>
                 </div>
 
