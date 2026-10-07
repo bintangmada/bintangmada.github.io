@@ -4,14 +4,41 @@
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
+  
+  /* Light Theme Colors */
+  --color-bg-light: #FFFFFF;
+  --color-card-light: #F9FAFB;
+  --color-border-light: #F3F4F6;
+  --color-accent-light: #0D9488; /* Teal 600 */
+  --color-accent-hover-light: #0F766E; /* Teal 700 */
+  --color-text-main-light: #111827; /* Gray 900 */
+  --color-text-muted-light: #4B5563; /* Gray 600 */
+
+  /* Dark Theme Colors */
+  --color-bg-dark: #0F172A; /* Slate 900 */
+  --color-card-dark: #1E293B; /* Slate 800 */
+  --color-border-dark: #334155; /* Slate 700 */
+  --color-accent-dark-text: #2DD4BF; /* Teal 400 */
+  --color-accent-dark-bg: #115E59; /* Teal 800 */
+  --color-accent-dark-hover: #0F766E; /* Teal 700 */
+  --color-text-main-dark: #F8FAFC; /* Slate 50 */
+  --color-text-muted-dark: #94A3B8; /* Slate 400 */
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-
+  
   body {
-    @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+    @apply bg-bg-light text-text-main-light antialiased transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply bg-bg-dark text-text-main-dark;
+  }
+
+  section[id] {
+    scroll-margin-top: 100px;
   }
 }

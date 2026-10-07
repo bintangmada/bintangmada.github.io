@@ -6,7 +6,7 @@
             "role": "Java Developer",
             "greeting": "Selamat Datang di Portofolio Saya",
             "shortDescription": "Java Developer dengan pengalaman praktis dalam mengembangkan dan memelihara aplikasi enterprise, terutama menggunakan Java Spring Boot.",
-            "email": "bintang.mada@gmail.com",
+            "email": "bintangmadas@gmail.com",
             "location": "Jakarta, Indonesia",
             "github": "https://github.com/bintangmada",
             "linkedin": "https://www.linkedin.com/in/bintang-mada/",
@@ -84,24 +84,6 @@
                 "institution": "Universitas Brawijaya",
                 "year": "2015",
                 "description": "Fokus: Jaringan Komputer, Keamanan Jaringan, dan Sistem Terdistribusi (IPK: 3.31)"
-            },
-            {
-                "degree": "Java Coding Camp",
-                "institution": "PT Mitra Integrasi Informatika",
-                "year": "2022-2023",
-                "description": "Pelatihan dan Sertifikasi."
-            },
-            {
-                "degree": "Fullstack Web Designer",
-                "institution": "BuildWithAngga",
-                "year": "2020",
-                "description": "Pelatihan dan Sertifikasi."
-            },
-            {
-                "degree": "Progressive Web Apps",
-                "institution": "BuildWithAngga",
-                "year": "2020",
-                "description": "Pelatihan dan Sertifikasi."
             }
         ],
         "experiences": [
@@ -109,7 +91,7 @@
                 "role": "Developer",
                 "company": "Bank Negara Indonesia (Persero)",
                 "duration": "Mar 2023 - Sekarang",
-                "description": "Mengembangkan dan memelihara aplikasi manajemen vendor (internal & eksternal). Menangani registrasi vendor, kontrak, dan pelacakan personel alih daya (outsource). Membuat fitur pelaporan dan dasbor pemantauan.",
+                "description": "- Mengembangkan dan memelihara aplikasi fullstack manajemen vendor (internal & eksternal).\n- Mengembangkan dan memelihara layanan backend enterprise untuk Sistem Sertifikasi Profesional.\n- Menangani pendaftaran vendor, kontrak, dan pelacakan personel alih daya.\n- Membuat fitur pelaporan dan dasbor pemantauan.\n- Merancang dan mengimplementasikan RESTful API menggunakan Java, Spring Boot, dan Database Oracle.\n- Mengembangkan modul penjadwalan sertifikasi termasuk jadwal, pusat penilaian kompetensi, dan manajemen sesi penilaian.\n- Mengimplementasikan berbagai validasi bisnis seperti deteksi konflik jadwal, pencegahan duplikasi, validasi kuota peserta, dan sinkronisasi data transaksional.\n- Merancang view database Oracle dan mengoptimalkan query SQL untuk paginasi sisi server dan pencarian multi-kolom.\n- Membangun service yang dapat digunakan kembali (reusable) untuk meningkatkan maintainability dan mengurangi duplikasi kode.\n- Mengimplementasikan mekanisme soft delete, audit trails, dan operasi transaksional di berbagai entitas.",
                 "tags": [
                     "Java",
                     "Spring Boot",
@@ -152,6 +134,17 @@
             }
         ],
         "projects": [
+            {
+                "title": "Sistem Sertifikasi Profesional",
+                "description": "Layanan backend enterprise untuk Sistem Sertifikasi Profesional. (Tahun: 2026)",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Oracle"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/certification.png"
+            },
             {
                 "title": "Vendor Management Enhancement",
                 "description": "Sistem peningkatan manajemen vendor untuk kebutuhan enterprise. (Tahun: 2025)",
@@ -243,8 +236,60 @@
             "sendMessage": "Kirim Pesan",
             "namePlaceholder": "John Doe",
             "subjectPlaceholder": "Tawaran Proyek",
-            "messagePlaceholder": "Ceritakan bagaimana saya bisa membantu Anda..."
-        }
+            "messagePlaceholder": "Ceritakan bagaimana saya bisa membantu Anda...",
+            "training": "Pelatihan & Sertifikasi",
+            "organizations": "Organisasi & Kepanitiaan"
+        },
+        "trainings": [
+            {
+                "degree": "Java Coding Camp",
+                "institution": "PT Mitra Integrasi Informatika",
+                "year": "2022-2023",
+                "description": "Pelatihan dan Sertifikasi."
+            },
+            {
+                "degree": "Fullstack Web Designer",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Pelatihan dan Sertifikasi."
+            },
+            {
+                "degree": "Progressive Web Apps",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Pelatihan dan Sertifikasi."
+            }
+        ],
+        "organizations": [
+            {
+                "role": "Anggota",
+                "organization": "Perisai Diri, Universitas Brawijaya",
+                "type": "Organization & Volunteering"
+            },
+            {
+                "role": "Relawan",
+                "organization": "Sanggar Belajar Bersama, Relawan Nusantara",
+                "type": "Organization & Volunteering"
+            },
+            {
+                "role": "Kesekretariatan",
+                "organization": "Perisai Diri International Championship",
+                "year": "2017",
+                "type": "Event & Committee Experience"
+            },
+            {
+                "role": "Sekretaris Eksekutif",
+                "organization": "Diklat Perisai Diri UB",
+                "year": "2016",
+                "type": "Event & Committee Experience"
+            },
+            {
+                "role": "Ketua Pelaksana",
+                "organization": "Musyawarah Anggota Perisai Diri UB",
+                "year": "2017",
+                "type": "Event & Committee Experience"
+            }
+        ]
     },
     "en": {
         "personal": {
@@ -253,7 +298,7 @@
             "role": "Java Developer",
             "greeting": "Welcome to My Portfolio",
             "shortDescription": "Java Developer with hands-on experience in developing and maintaining enterprise applications, primarily using Java Spring Boot.",
-            "email": "bintang.mada@gmail.com",
+            "email": "bintangmadas@gmail.com",
             "location": "Jakarta, Indonesia",
             "github": "#",
             "linkedin": "#",
@@ -331,24 +376,6 @@
                 "institution": "Brawijaya University",
                 "year": "2015",
                 "description": "Focus: Computer Networking, Network Security, and Distributed Systems. GPA : 3.31"
-            },
-            {
-                "degree": "Java Coding Camp",
-                "institution": "PT Mitra Integrasi Informatika",
-                "year": "2022-2023",
-                "description": "Training and Certification."
-            },
-            {
-                "degree": "Fullstack Web Designer",
-                "institution": "BuildWithAngga",
-                "year": "2020",
-                "description": "Training and Certification."
-            },
-            {
-                "degree": "Progressive Web Apps",
-                "institution": "BuildWithAngga",
-                "year": "2020",
-                "description": "Training and Certification."
             }
         ],
         "experiences": [
@@ -356,7 +383,7 @@
                 "role": "Developer",
                 "company": "Bank Negara Indonesia (Persero)",
                 "duration": "Mar 2023 - Present",
-                "description": "Developed and maintained vendor management applications (internal & external). Handled vendor registration, contracts, and outsourced personnel tracking. Created reporting features and monitoring dashboards.",
+                "description": "- Developed and maintained fullstack vendor management applications (internal & external).\n- Developed and maintained enterprise backend services for Professional Certification System.\n- Handled vendor registration, contracts, and outsourced personnel tracking.\n- Created reporting features and monitoring dashboards.\n- Designed and implemented RESTful APIs using Java, Spring Boot, and Oracle Database.\n- Developed certification scheduling modules including schedule, competency assessment center, and assessment session management.\n- Implemented multiple business validation such as schedule conflict detection, duplicate prevention, participant quota validation, and transactional data synchronization.\n- Designed oracle database views and optimized SQL queries for server side pagination and multi column searching.\n- Built reusable service to improve maintainability and reduce duplicate code.\n- Implemented soft delete mechanism, audit trails, and transactional operations across multiple entities.",
                 "tags": [
                     "Java",
                     "Spring Boot",
@@ -399,6 +426,17 @@
             }
         ],
         "projects": [
+            {
+                "title": "Professional Certification System",
+                "description": "Enterprise backend services for Professional Certification System. (Year: 2026)",
+                "tags": [
+                    "Java",
+                    "Spring Boot",
+                    "Oracle"
+                ],
+                "link": "#",
+                "image": "/images/projects/thumbnails/certification.png"
+            },
             {
                 "title": "Vendor Management Enhancement",
                 "description": "An enhanced vendor management system for enterprise needs. (Year: 2025)",
@@ -490,7 +528,59 @@
             "sendMessage": "Send Message",
             "namePlaceholder": "John Doe",
             "subjectPlaceholder": "Project Offer",
-            "messagePlaceholder": "Tell me how I can help you..."
-        }
+            "messagePlaceholder": "Tell me how I can help you...",
+            "training": "Training & Certification",
+            "organizations": "Organizations & Committees"
+        },
+        "trainings": [
+            {
+                "degree": "Java Coding Camp",
+                "institution": "PT Mitra Integrasi Informatika",
+                "year": "2022-2023",
+                "description": "Training and Certification."
+            },
+            {
+                "degree": "Fullstack Web Designer",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Training and Certification."
+            },
+            {
+                "degree": "Progressive Web Apps",
+                "institution": "BuildWithAngga",
+                "year": "2020",
+                "description": "Training and Certification."
+            }
+        ],
+        "organizations": [
+            {
+                "role": "Member",
+                "organization": "Perisai Diri, Universitas Brawijaya",
+                "type": "Organization & Volunteering"
+            },
+            {
+                "role": "Volunteer",
+                "organization": "Sanggar Belajar Bersama, Relawan Nusantara",
+                "type": "Organization & Volunteering"
+            },
+            {
+                "role": "Secretarial",
+                "organization": "Perisai Diri International Championship",
+                "year": "2017",
+                "type": "Event & Committee Experience"
+            },
+            {
+                "role": "Executive Secretary",
+                "organization": "Diklat Perisai Diri UB",
+                "year": "2016",
+                "type": "Event & Committee Experience"
+            },
+            {
+                "role": "Chief Executive",
+                "organization": "Musyawarah Anggota Perisai Diri UB",
+                "year": "2017",
+                "type": "Event & Committee Experience"
+            }
+        ]
     }
 }

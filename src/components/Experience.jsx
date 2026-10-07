@@ -1,59 +1,51 @@
-import { motion } from 'framer-motion';
-
 const Experience = ({ data }) => {
     const { experiences, ui } = data;
 
     return (
-        <section id="experience" className="py-24 bg-gray-50 dark:bg-gray-900/50 overflow-hidden">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">{ui.experience}</h2>
-                    <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
-                </motion.div>
+        <section id="experience" className="flex flex-col gap-8">
+            <div>
 
-                <div className="space-y-12">
-                    {experiences.map((exp, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.5, delay: index * 0.15 }}
-                            className="flex flex-col md:flex-row gap-6 md:gap-12 group"
-                        >
-                            <div className="md:w-1/3 flex flex-col md:items-end">
-                                <span className="inline-block px-4 py-1.5 bg-white dark:bg-gray-800 border-2 border-blue-100 dark:border-blue-900/50 text-blue-600 dark:text-blue-400 text-sm font-bold rounded-full shadow-sm">
-                                    {exp.duration}
-                                </span>
+                <h2 className="text-3xl font-bold">{ui.experience || "My journey"}</h2>
+            </div>
+            
+            <div className="relative border-l-2 border-accent-light/30 dark:border-accent-dark-bg ml-3 md:ml-0 md:border-none mt-6 flex flex-col gap-12">
+                {experiences.map((exp, index) => (
+                    <div key={index} className="relative pl-8 md:pl-0 md:flex group">
+                        
+                        {/* Timeline dot & line for desktop */}
+                        <div className="absolute md:left-[25%] md:-ml-[8px] top-1 md:top-1.5 w-4 h-4 bg-accent-light dark:bg-accent-dark-text rounded-full border-4 border-bg-light dark:border-bg-dark z-10 hidden md:block"></div>
+                        <div className="absolute left-[25%] -ml-[1px] top-0 bottom-[-3rem] w-0.5 bg-accent-light/20 dark:bg-accent-dark-bg hidden md:block"></div>
+
+                        {/* Mobile dot */}
+                        <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-accent-light dark:bg-accent-dark-text rounded-full border-4 border-bg-light dark:border-bg-dark z-10 md:hidden"></div>
+
+                        <div className="md:w-1/4 flex flex-col pt-1">
+                            <span className="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark md:text-right md:pr-12">
+                                {exp.duration}
+                            </span>
+                        </div>
+                        
+                        <div className="md:w-3/4 flex flex-col gap-2 md:pl-10">
+                            <h3 className="text-lg font-bold text-text-main-light dark:text-text-main-dark">
+                                {exp.role}
+                            </h3>
+                            <span className="text-sm font-semibold text-accent-light dark:text-accent-dark-text">
+                                {exp.company}
+                            </span>
+                            <div className="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mt-2 max-w-2xl text-justify">
+                                {exp.description.includes('\n') ? (
+                                    <ul className="list-disc pl-5 space-y-1">
+                                        {exp.description.split('\n').map((line, i) => (
+                                            <li key={i}>{line.replace(/^- /, '')}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p>{exp.description}</p>
+                                )}
                             </div>
-
-                            <div className="relative md:w-2/3 bg-white dark:bg-gray-900 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
-                                <div className="absolute top-8 -left-4 w-8 h-8 bg-blue-100 dark:bg-blue-900 flex items-center justify-center rounded-full border-4 border-white dark:border-gray-950 hidden md:flex">
-                                    <div className="w-2.5 h-2.5 bg-blue-600 rounded-full"></div>
-                                </div>
-
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{exp.role}</h3>
-                                <h4 className="text-lg text-blue-600 dark:text-blue-400 font-medium mb-4">{exp.company}</h4>
-                                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                                    {exp.description}
-                                </p>
-                                <div className="flex flex-wrap gap-2">
-                                    {exp.tags.map((tag, i) => (
-                                        <span key={i} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-semibold rounded-md">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     );

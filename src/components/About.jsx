@@ -1,90 +1,57 @@
-import { motion } from 'framer-motion';
-
 const About = ({ data }) => {
-    const { about, ui } = data;
-
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-    };
-
-    const staggerContainer = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-    };
+    const { about, ui, personal } = data;
 
     return (
-        <section id="about" className="py-24 bg-gray-50 dark:bg-gray-900/50 relative overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
-                    variants={fadeInUp}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">{ui.aboutMe}</h2>
-                    <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
-                </motion.div>
+        <section id="about" className="flex flex-col gap-16">
+            
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 justify-between items-center md:items-start">
+                <div className="flex-1 w-full">
 
-                <div className="flex flex-col lg:flex-row gap-12 items-start">
-                    <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="flex-1 bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-100 dark:border-gray-800"
-                    >
-                        <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">{ui.descTitle}</h3>
+                    <h2 className="text-3xl font-bold mb-6">{ui.aboutMe || "A bit about me"}</h2>
+                    
+                    <div className="flex flex-col gap-4 text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-8 text-justify">
                         {about.paragraphs.map((paragraph, index) => (
-                            <p key={index} className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                                {paragraph}
-                            </p>
+                            <p key={index}>{paragraph}</p>
                         ))}
+                    </div>
 
-                        <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800">
-                            <a href="/assets/files/CV_Bintang_Mada_Suharsono.pdf" download="CV_Bintang_Mada.pdf" className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path></svg>
-                                {ui.downloadCv}
-                            </a>
-                        </div>
-                    </motion.div>
+                    <a href="#about" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-sm border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+                        More about me &rarr;
+                    </a>
+                </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-                        className="flex-1 w-full lg:w-auto mt-8 lg:mt-0"
-                    >
-                        <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">{ui.skillsTitle}</h3>
-                        <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-wrap gap-3">
-                            {about.skills.map((skill, index) => (
-                                <motion.span key={index} variants={fadeInUp} className="px-4 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 shadow-sm hover:border-blue-500 hover:text-blue-600 transition-colors cursor-default">
-                                    {skill}
-                                </motion.span>
-                            ))}
-                        </motion.div>
-
-                        <div className="mt-12">
-                            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">{ui.focusTitle}</h3>
-                            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-4">
-                                {about.focusAreas.map((area, index) => (
-                                    <motion.div key={index} variants={fadeInUp} className="bg-white dark:bg-gray-900 p-4 rounded-xl border border-gray-100 dark:border-gray-800 flex items-start gap-4 shadow-sm">
-                                        <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg">
-                                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                        </div>
-                                        <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">{area.title}</h4>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{area.description}</p>
-                                        </div>
-                                    </motion.div>
-                                ))}
-                            </motion.div>
-                        </div>
-                    </motion.div>
+                <div className="flex-1 w-full">
+                  <img src={personal.image} alt="Profile picture" className="w-full h-64 md:h-72 object-cover rounded-3xl shadow-sm" />
                 </div>
             </div>
+
+            {/* Stats Row */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div className="bg-card-light dark:bg-card-dark rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-border-light dark:border-border-dark">
+                    <svg className="w-8 h-8 text-accent-light dark:text-accent-dark-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <span className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-1">3+</span>
+                    <span className="text-xs text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider font-semibold">Years Experience</span>
+                </div>
+                
+                <div className="bg-card-light dark:bg-card-dark rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-border-light dark:border-border-dark">
+                    <svg className="w-8 h-8 text-accent-light dark:text-accent-dark-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <span className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-1">10+</span>
+                    <span className="text-xs text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider font-semibold">Technologies</span>
+                </div>
+
+                <div className="bg-card-light dark:bg-card-dark rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-border-light dark:border-border-dark">
+                    <svg className="w-8 h-8 text-accent-light dark:text-accent-dark-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    <span className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-1">3</span>
+                    <span className="text-xs text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider font-semibold">Projects</span>
+                </div>
+
+                <div className="bg-card-light dark:bg-card-dark rounded-2xl p-6 flex flex-col items-center justify-center text-center border border-border-light dark:border-border-dark">
+                    <svg className="w-8 h-8 text-accent-light dark:text-accent-dark-text mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <span className="text-2xl font-bold text-text-main-light dark:text-text-main-dark mb-1">Always</span>
+                    <span className="text-xs text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider font-semibold">Learning</span>
+                </div>
+            </div>
+
         </section>
     );
 };

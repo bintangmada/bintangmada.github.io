@@ -1,79 +1,56 @@
-import { motion } from 'framer-motion';
-
 const Hero = ({ data }) => {
     const { personal, ui } = data;
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.2 }
-        }
-    };
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-    };
-
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-gray-950 pt-16">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/20 dark:bg-blue-600/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-400/20 dark:bg-purple-600/20 rounded-full blur-3xl -z-10 animate-pulse delay-1000"></div>
+        <section id="home" className="pt-16 pb-16 flex flex-col-reverse md:flex-row items-center gap-12 justify-between">
+            <div className="flex-1 flex flex-col items-start text-left w-full md:max-w-xl">
+    <span className="text-sm font-medium uppercase text-text-muted-light dark:text-text-muted-dark mb-2 block">
+      HI, I'M
+    </span>
+                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-text-main-light dark:text-text-main-dark">
+                    Bintang <span className="text-accent-light dark:text-accent-dark-text">Mada</span>
+                </h1>
+                
+                <h2 className="text-xl md:text-2xl mb-8 text-text-muted-light dark:text-text-muted-dark leading-relaxed">
+                    I build web applications<br/>and solve real problems.
+                </h2>
+                
+                <div className="flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center gap-4 mb-8">
+                    <a href="#projects" className="px-6 py-3 rounded-full font-semibold text-sm bg-accent-light hover:bg-accent-hover-light text-white transition-colors text-center shadow-sm">
+                        {ui.viewProjects || "View My Work"} &rarr;
+                    </a>
+                    <a href="/assets/files/CV_Bintang_Mada_Suharsono.pdf?v=2" download="CV_Bintang_Mada.pdf" className="px-6 py-3 rounded-full font-semibold text-sm border border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 transition-colors text-center flex items-center justify-center gap-2">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download CV
+                    </a>
+                </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center gap-12">
-                <motion.div
-                    className="flex-1 text-center md:text-left"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    <motion.h2 variants={itemVariants} className="text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-4">
-                        {personal.greeting}
-                    </motion.h2>
-                    <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight leading-tight">
-                        {ui.halo} <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                            {personal.name}
-                        </span>
-                    </motion.h1>
-                    <motion.p variants={itemVariants} className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto md:mx-0">
-                        {personal.shortDescription}
-                    </motion.p>
+                <div className="flex items-center gap-6">
+                    <a href={personal.github} target="_blank" rel="noreferrer" className="text-text-muted-light dark:text-text-muted-dark hover:text-text-main-light dark:hover:text-text-main-dark transition-colors">
+                        <span className="sr-only">GitHub</span>
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" /></svg>
+                    </a>
+                    <a href={personal.linkedin} target="_blank" rel="noreferrer" className="text-text-muted-light dark:text-text-muted-dark hover:text-blue-600 transition-colors">
+                        <span className="sr-only">LinkedIn</span>
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
+                    </a>
+                    <a href={`mailto:${personal.email}`} className="text-text-muted-light dark:text-text-muted-dark hover:text-text-main-light dark:hover:text-text-main-dark transition-colors">
+                        <span className="sr-only">Email</span>
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </a>
+                </div>
+            </div>
 
-                    <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center md:justify-start">
-                        <a href="#projects" className="px-8 py-3.5 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-600/25 flex items-center gap-2">
-                            {ui.viewProjects}
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                        </a>
-                        <a href="#contact" className="px-8 py-3.5 rounded-full border-2 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:border-blue-600 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
-                            {ui.contactMe}
-                        </a>
-                    </motion.div>
-                </motion.div>
-
-                <motion.div
-                    className="flex-1 flex justify-center md:justify-end"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                >
-                    <div className="relative w-72 h-72 md:w-96 md:h-96 group mx-auto">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-full animate-spin-slow opacity-30 group-hover:opacity-60 blur-2xl transition-opacity duration-700"></div>
-                        <div className="absolute inset-2 bg-gradient-to-bl from-blue-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-700"></div>
-                        <div className="w-full h-full rounded-full p-1 bg-gradient-to-tr from-blue-400 via-purple-500 to-blue-600 shadow-2xl relative z-10 transform transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-blue-500/25">
-                            <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center border-4 border-white dark:border-gray-950 bg-white dark:bg-gray-900">
-                                {personal.image && personal.image !== "" ? (
-                                    <img src={personal.image} alt={personal.name} className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" />
-                                ) : (
-                                    <svg className="w-32 h-32 text-gray-400 dark:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                                    </svg>
-                                )}
-                            </div>
+            <div className="flex-1 w-full flex justify-center md:justify-end mb-8 md:mb-0">
+                <div className="w-full max-w-md h-64 md:h-80 bg-gray-100 dark:bg-card-dark rounded-3xl overflow-hidden shadow-md">
+                    {personal.image && personal.image !== "" ? (
+                        <img src={personal.image} alt={personal.name} className="w-full h-full object-cover" />
+                    ) : (
+                        <div className="w-full h-full flex items-center justify-center text-gray-400">
+                            Avatar
                         </div>
-                    </div>
-                </motion.div>
+                    )}
+                </div>
             </div>
         </section>
     );
