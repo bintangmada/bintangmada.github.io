@@ -1,17 +1,22 @@
+import { FaJava, FaReact, FaDocker, FaGithub, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiSpringboot, SiJavascript, SiPostgresql, SiGit } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
+import { GrOracle } from "react-icons/gr";
+
 const Skills = () => {
     const skills = [
-        { name: "Java", icon: "☕" },
-        { name: "Spring Boot", icon: "🍃" },
-        { name: "React", icon: "⚛️" },
-        { name: "JavaScript", icon: "🟨" },
-        { name: "PostgreSQL", icon: "🐘" },
-        { name: "Oracle", icon: "🔴" },
-        { name: "Redis", icon: "🧱" },
-        { name: "Docker", icon: "🐳" },
-        { name: "Git", icon: "🌿" },
-        { name: "GitHub", icon: "🐙" },
-        { name: "HTML", icon: "🟠" },
-        { name: "CSS", icon: "🔵" }
+        { name: "Java", icon: <FaJava className="text-xl text-[#007396]" /> },
+        { name: "Spring Boot", icon: <SiSpringboot className="text-xl text-[#6DB33F]" /> },
+        { name: "React", icon: <FaReact className="text-xl text-[#61DAFB]" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-xl text-[#F7DF1E]" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="text-xl text-[#4169E1]" /> },
+        { name: "Oracle", icon: <GrOracle className="text-xl text-[#F80000]" /> },
+        { name: "Redis", icon: <DiRedis className="text-xl text-[#DC382D]" /> },
+        { name: "Docker", icon: <FaDocker className="text-xl text-[#2496ED]" /> },
+        { name: "Git", icon: <SiGit className="text-xl text-[#F05032]" /> },
+        { name: "GitHub", icon: <FaGithub className="text-xl text-black dark:text-white" /> },
+        { name: "HTML", icon: <FaHtml5 className="text-xl text-[#E34F26]" /> },
+        { name: "CSS", icon: <FaCss3Alt className="text-xl text-[#1572B6]" /> }
     ];
 
     return (
